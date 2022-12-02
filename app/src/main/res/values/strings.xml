@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Learning Task 4.2</string>
+    <string name="calculator">Final Grade Calculator</string>
+    <string name="app_instructions">Enter 1st and 2nd Semester Grades to compute final Grade and remark(Passed or Failed).</string>
+    <string name="txt_compute_result">Showing Result(s)</string>
+    <string name="computebtn">Compute</string>
+    <string name="num1">Enter 1st Semester Grade</string>
+    <string name="num2">Enter 2nd Semester Grade</string>
+    <string name="Remarks">Remark: </string>
+    <string name="RemarkP">Student Passed</string>
+    <string name="RemarkF">Student Failed</string>
+    <string name="txt_result1">Showing result...</string>
+    <string name="txt_result2">Showing result...</string>
+    <string name="btn_return">New Computation</string>
+    <string name="title_activity_resultP">PassedActivity</string>
+    <string name="title_activity_resultF">FailedActivity</string>
+</resources>
