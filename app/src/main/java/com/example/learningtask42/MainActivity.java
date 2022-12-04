@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    int gr1, gr2, result;
+    int gr1, gr2, result,FGrade, MidTrm, EndTrm;
     String Remark;
     EditText et1, et2;
     Button btnCompute;
@@ -46,17 +46,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             gr1 = Integer.parseInt(et1.getText().toString());
             gr2 = Integer.parseInt(et2.getText().toString());
         }
-        result = (gr1 + gr2) / 2;
+        MidTrm = (int) (gr1 * 0.5);
+        EndTrm = (int) (gr2 * 0.5);
+        FGrade = MidTrm + EndTrm;
 
-        if(result >=95){
+        if(FGrade >=95){
             Remark ="A";
-        }else if (result >=90){
+        }else if (FGrade >=90){
             Remark = "B";
-        } else if (result>=85){
+        } else if (FGrade>=85){
             Remark = "C";
-        } else if (result >=80){
+        } else if (FGrade >=80){
             Remark = "D";
-        } else if (result >=75){
+        } else if (FGrade >=75){
             Remark = "E";
         }else {
             Remark = "F";
@@ -68,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case "C":
             case "D":
             case "E":
-                String resultgrade = String.valueOf(result);
+                String resultgrade = String.valueOf(FGrade);
                 Bundle args = new Bundle();
                 args.putString("result", Remark);
                 args.putString("result2", resultgrade);
@@ -80,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case "F":
-                resultgrade = String.valueOf(result);
+                resultgrade = String.valueOf(FGrade);
                 Bundle args2 = new Bundle();
                 args2.putString("result", Remark);
                 args2.putString("result2", resultgrade);
