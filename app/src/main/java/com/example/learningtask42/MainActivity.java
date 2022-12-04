@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    int gr1, gr2, result,FGrade, MidTrm, EndTrm;
+    int gr1, gr2, FGrade, MidTrm, EndTrm;
     String Remark;
     EditText et1, et2;
     Button btnCompute;
